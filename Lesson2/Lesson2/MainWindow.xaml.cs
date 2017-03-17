@@ -11,11 +11,17 @@ namespace Lesson2
         public MainWindow()
         {
             InitializeComponent();
+            ButAddInDel.Content = ">>";
+            ButAddInList.Content = "<<";
         }
 
-        private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+ 
+        public class Student
         {
-
+            public string FIO { get; set; }
+            public string Group { get; set; }
+            public string Phone { get; set; }
+            
         }
     }
 }
